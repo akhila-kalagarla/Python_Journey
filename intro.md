@@ -1,31 +1,31 @@
-### PYTHON INTRO
+# PYTHON INTRO
 - *python is popular language . it was created by Guido van Rossum, and released in 1991.*
 
-# it is used for :
+### it is used for :
 
        #Web development(Server side)
        #Software development
        #Mathematics
        #System scripting
 
-### Python Installation
+# Python Installation
 
-# To check python is installed or not in windows 
+### To check python is installed or not in windows 
 - *c:\users\your_name>python --version*
-# to check in linux or Mac
+### to check in linux or Mac
 - *python --version*
 
-# Python version on editor
+### Python version on editor
 - *To check the python version on editor*
 - *import sys
     print(sys.version)*
 
-### Python Indentation
+# Python Indentation
 In python indentation refers to the space at the beginning of a code line.
 In other programming languages the indentation used for readability of a code but coming to python indentation it is very important.
 Indentation indicates the block of code in python. if we skip the indentation it will gives you a error and we have to use the same number of spaces in a same block of code otherwise it will gives errors
 
-### Python Comments
+# Python Comments
 comments are used in to code for easy to understand and the code and for readability
 - *For creating the comment we use '#' symbol*
 
