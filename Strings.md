@@ -10,7 +10,7 @@
      print("I am 'Akhila'") #Output: I am 'Akhila'
 
 ### Strings are arrays
-- *In strings we use square brackets[] to access elements of a string
+- *In strings we use square brackets[] to access elements of a string*
  ##### Ex:
     a = "Akhila"
     print(a[0]) #Output: A
@@ -89,3 +89,39 @@
  ##### \f - It uses for form feed
  ##### \000 - It used for octal value
  ##### \xhh - It used for hex value
+
+### String methods
+##### 1) Captalize() 
+- *It converts the first character to upper case and rest of the characters are in lower case.*
+ ##### Ex:
+     a = "akhila"
+     print(a.Captalize()) #Output: Akhila
+
+     a = "akHiLa"
+     print(a.Captalize()) #Output: Akhila
+
+     a = "AKHILA"
+     print(a.Captalize()) #Output: Akhila
+##### 2) Casefold()
+- *It converts all the characters into lower case in a given string.*
+ ##### Ex:
+    a = "akhila"
+     print(a.Casefold()) #Output: akhila
+
+     a = "akHiLa"
+     print(a.Casefold()) #Output: akhila
+
+     a = "AKHILA"
+     print(a.Casefold()) #Output: akhila
+##### 3) center()
+- *It returns the string in center
+ ##### Ex:
+     a = "akhila"
+     print(a.center(20)) #Output:             akhila
+
+     a = "akhila"
+     print(a.Casefold(20,"p")) #Output: ppppppakhilapppppp
+
+     a = "AKHILA"
+     print(a.Casefold(20,"o")) #Output: ooooooakhilaoooooo
+##### 4) count()
