@@ -10,7 +10,7 @@
      print("I am 'Akhila'") #Output: I am 'Akhila'
 
 ### Strings are arrays
-- * In strings we use square brackets[] to access elements of a string
+- *In strings we use square brackets[] to access elements of a string
  ##### Ex:
     a = "Akhila"
     print(a[0]) #Output: A
@@ -79,9 +79,9 @@
      txt = "I am Akhila \"Indian"\ from Global Coding Club"
      print(txt) #Output: I am Akhila "Indian" from Global Coding Club
 
-- *There are some escape characters in python
- ##### \' - Single quote
- ##### \\ - It inserts single slash where ever you want
+- *There are some escape characters in python*
+ ##### \\' - Single quote
+ ##### \\\ - It inserts single slash where ever you want
  ##### \n - It uses to get new line
  ##### \r - Carriage return
  ##### \t - It uses for tab
