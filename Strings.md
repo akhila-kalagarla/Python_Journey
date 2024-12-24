@@ -91,7 +91,7 @@
  ##### \xhh - It used for hex value
 
 ### String methods
-##### 1) Captalize() 
+#### 1) Captalize() 
 - *It converts the first character to upper case and rest of the characters are in lower case.*
  ##### Ex:
      a = "akhila"
@@ -102,7 +102,7 @@
 
      a = "AKHILA"
      print(a.Captalize()) #Output: Akhila
-##### 2) Casefold()
+#### 2) Casefold()
 - *It converts all the characters into lower case in a given string.*
  ##### Ex:
     a = "akhila"
@@ -113,8 +113,8 @@
 
      a = "AKHILA"
      print(a.Casefold()) #Output: akhila
-##### 3) center()
-- *It returns the string in center
+#### 3) center()
+- *It returns the string in center*
  ##### Ex:
      a = "akhila"
      print(a.center(20)) #Output:             akhila
@@ -124,4 +124,13 @@
 
      a = "AKHILA"
      print(a.Casefold(20,"o")) #Output: ooooooakhilaoooooo
-##### 4) count()
+#### 4) count()
+- *The count method is used to count the how many times the specific string is occured in a given sentence.*
+ ##### Ex:
+     a = "I am K Akhila from KIEW, I am currently pursuing B.tech 3rd year in KIEW with the specilisation of AID."
+     print(a.count("KIEW")) #Output: 2
+
+     a = "Every day in Kiew is a new day filled with beauty and memories."
+     print(a.count("day")) #Output: 2
+
+- *NOTE: There are 45 methods in strings if you need more just visit "string methods in W3 schools".*
