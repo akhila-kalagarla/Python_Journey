@@ -134,3 +134,16 @@
      print(a.count("day")) #Output: 2
 
 - *NOTE: There are 45 methods in strings if you need more just visit "string methods in W3 schools".*
+
+### Booleans
+
+- *It returns the statements that True or False*
+- *If the print statement is empty then it returns "False" otherwise it returns "True"*
+ ##### Ex:
+     print(bool("abc")) #Output: True
+     print(bool(123)) #Output: True
+     print(bool["apple","banana"]) #Output: True
+ ##### Ex:
+     print(bool("")) #Output: True
+     print(bool()) #Output: True
+     print(bool[]) #Output: True 
