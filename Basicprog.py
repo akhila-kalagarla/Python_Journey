@@ -121,15 +121,17 @@ def ascend(arr):
 my_list = [12, 4, 56, 1, 99, 23]
 sorted_list = ascend(my_list)
 print("Sorted list in ascending order:", sorted_list)
-#OR
+
+                         #OR
+
 numbers = [6, 3, 8, 1, 4]
 sorted_list = []
 while numbers:
     smallest = min(numbers)    
     sorted_list.append(smallest)  
     numbers.remove(smallest)      
-
 print("Sorted list:", sorted_list)
+
 # 16.Write a python program to print the sum of numbers which are divisible by 3 or 5
 N = int(input())
 count = 0
