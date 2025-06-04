@@ -140,5 +140,11 @@ for i in range(1, N):
         count += i
 print(count)
 
-
+# 17.Write a function that takes a string and returns the string with:All vowels removed Reversed string
+def vowels(s):
+    v = "aeiouAEIOU"
+    n = ''.join([char for char in s if char not in v])
+    return n[::-1]
+s = "hello word"
+print(vowels(s))
 
