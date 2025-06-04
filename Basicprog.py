@@ -148,3 +148,7 @@ def vowels(s):
 s = "hello word"
 print(vowels(s))
 
+# 18.Given a tuple of numbers, write a function that returns a new tuple containing only even numbers.
+def even(tup):
+    return tuple(num for num in tup if num%2 == 0)
+print(even((1,2,3,4,5,6)))
