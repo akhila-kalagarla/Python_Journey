@@ -6,7 +6,8 @@ for i in arr:
         value = i
 print(value)
 
-#OR
+           #OR
+
 arr = [4,9,2,7,6,1,21]
 s = l = arr[0]
 for i in arr:
