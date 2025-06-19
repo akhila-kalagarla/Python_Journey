@@ -29,8 +29,15 @@ print(y)
 x, y = y, x
 print(x)
 print(y)
+  #Or
+x = x + y
+y = x - y
+x = x - y
+print(x)
+print(y)
 
-#Expressions on the right-hand side are evaluated before assignment:
+
+# #Expressions on the right-hand side are evaluated before assignment:
 x = 100
 y = "Akhila"
 
