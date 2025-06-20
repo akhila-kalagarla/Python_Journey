@@ -13,3 +13,9 @@ print("Top of the stack element is :",topelement)
 poppedelement = stack.pop()
 print("Removed element from the stack:",poppedelement)
 print(stack)
+#To know the the stack is empty or not
+s = not bool(stack)
+print(s)
+#To know the length of the stack
+n = len(stack)
+print(n)
