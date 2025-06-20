@@ -52,3 +52,4 @@ print("length of the stack:",mystack.size())
 print("Stack is empty or not:", mystack.isEmpty())
 print("Stack after operations:", mystack.stack)
 
+#Create a stack and perform stack operations using linked list
