@@ -41,6 +41,7 @@ print(list) #[80, 20, 'kiet', 30]
 #TUPLES - (),Ordered, Immutable
 tup = (10,20,"kiet",50)
 print(tup) #(10, 20, 'kiet', 50)
+#Range
 
 ###Mapping data type
 #Dictionary - {},
