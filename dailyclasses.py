@@ -41,7 +41,14 @@ print(list) #[80, 20, 'kiet', 30]
 #TUPLES - (),Ordered, Immutable
 tup = (10,20,"kiet",50)
 print(tup) #(10, 20, 'kiet', 50)
-#Range
+
+###Mapping data type
+#Dictionary - {}, keys:values, keys-immutable, values-mutable
+dict = {"name":"Akhila","age":42}
+print(dict) #{'name': 'Akhila', 'age': 42}
+print(dict.values()) #dict_values(['Akhila', 42])
+print(dict.keys()) #dict_keys(['name', 'age'])
+print(dict.items()) #dict_items([('name', 'Akhila'), ('age', 42)])
 
 ###Inputs and Outputs
 #####Inputs
