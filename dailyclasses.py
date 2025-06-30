@@ -43,5 +43,13 @@ tup = (10,20,"kiet",50)
 print(tup) #(10, 20, 'kiet', 50)
 #Range
 
-###Mapping data type
-#Dictionary - {},
+###Inputs and Outputs
+#To take int as input
+a = int(input("Enter a number:")) #Enter a number:6
+b = int(input("Enter a number:")) #Enter a number:7
+print(a) #6
+print(b) #7
+print(a+b) #13
+#To take string as input
+name = input("Enter your name: ") #Enter your name: Akhila
+print("Hi", name) #Hi Akhila
