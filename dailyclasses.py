@@ -65,3 +65,10 @@ print(x, y) #7 8
 print("Hello, World!")
 print("Welcome","to","python","language", sep = "-")
 print("Loading", end = "...")
+
+#Comments
+#####Single line comment
+#starts with # symbol
+print("hi")#This msg not print #hi
+#####Multi line comment
+'''This is multi line  comment python ignores this multi line comments'''
