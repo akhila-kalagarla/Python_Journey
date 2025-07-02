@@ -209,6 +209,7 @@ elif a > 19 and a <= 35:
 else:
     print("Citizen")
 
+
 num1 = int(input("Enter a price"))
 if num1 >= 500:
     print("50% discount will applicable for on your purchase")
