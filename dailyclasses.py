@@ -330,14 +330,14 @@
 #         print(i, end = " , ") #1 3 5 7 9
 # print()
 
-#Loop control statements
-for i in range(10):
-    if i == 5:
-        print(f"{i}.")
-        break
-    print(i,end = ",")
+# #Loop control statements
+# for i in range(10):
+#     if i == 5:
+#         print(f"{i}.")
+#         break
+#     print(i,end = ",")
 
-#Example on while loop
+# #Example on while loop
 # while True:
 #     a = input()
 #     if a == "exit":
@@ -351,11 +351,18 @@ for i in range(10):
 # else:
 #     print("Invalid")
 
-#Password using while
-while True:
-    a = input()
-    if a == "akhila@5":
-        print("Correct password")
-        break
-    print("Wrong password")
- 
+# #Password using while
+# while True:
+#     a = input()
+#     if a == "akhila@5":
+#         print("Correct password")
+#         break
+#     print("Wrong password")
+
+#Skip negative numbers
+n = [4,-1,6,-2,0,9]
+for i in n:
+    if i < 0:
+        print(f"Negative number :{i}")
+        continue
+    print(f"positive number :{i}")
