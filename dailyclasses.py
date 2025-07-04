@@ -301,7 +301,7 @@ while c < 5:
         continue
     print(c)
     c += 1
-
+#To print the numbers sequence in reverse order within the range
 c = 6
 while c > 0:
     print(c)
