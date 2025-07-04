@@ -87,7 +87,67 @@ for i in range(1, 21):
 #Break in while loop
 i = 1
 while True:
-    if i == 8:
+    if i == 7:
         break
-    print(i)
+    print(i, end = " ") #1 2 3 4 5 6 
     i += 1
+
+#Continue in while loop
+i = 0
+while i < 10:
+    i += 1
+    if i == 3 or i == 6:
+        continue
+    print(i, end = " ") #1 2 4 5 7 8 9 10 
+
+#Break if total sum > 100
+n = [10,20,30,40,15,5,7 ]
+t = 0
+for num in n:
+    t += num #10+20=30
+    if t > 100:
+        break
+    print("Sum:",t, end = ",") #Sum: 10,Sum: 30,Sum: 60,Sum: 100,
+
+#Skip words starting with 'b'
+string = ["bat","apple","banana","cat","dog"]
+for word in string:
+    if word.startswith('b'):
+        continue
+    print(word,end = " ") #apple cat dog 
+
+#Nested loop with break
+for i in range(1,4):
+    for j in range(1,10):
+        if i*j > 20:
+            break
+        print(f"{i}*{j}={i*j}")
+    print()
+
+#Find  first even and break
+num = [1,3,5,7,8,9]
+for nums in num:
+    if nums%2 == 0:
+        print("First even:",nums) #First even: 8
+        break
+
+#Continue on divisible by 4 or 6
+for i in range(1,15):
+    if i%4 == 0 or i%6 == 0:
+        continue
+    print(i, end = " ") #1 2 3 5 7 9 10 11 13 14 
+print()
+
+#Continue on divisible by 4 or 6
+for i in range(1,15):
+    if i%4 == 0 and i%6 == 0:
+        continue
+    print(i, end = " ") #1 2 3 4 5 6 7 8 9 10 11 13 14 
+print()
+
+#Skip every third character
+text = "abcdefghijklmnopqrstuvwxyz"
+for index, char in enumerate(text, 1):
+    if index%3 == 0:
+        continue
+    print(char, end = " ") #a b d e g h j k m n p q s t v w y z 
