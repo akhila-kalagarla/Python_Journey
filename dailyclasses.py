@@ -223,6 +223,7 @@ else:
     print("0% discount")
 
 #DAY - 3 3/07/2025
+
 #Looping statements(Iteration)
 #example using break
 for i in range(5): #0 1 2 
@@ -306,6 +307,10 @@ c = 6
 while c > 0:
     print(c)
     c -= 1
+
+#DAY - 4 4/07/25
+#Range():
+
 
 
     
