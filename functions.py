@@ -67,3 +67,13 @@ fun()   # Keep smiling
 def greet(name):
     print("Hello",name)
 greet("students")  # Hello students
+'''3.No Arguments, With Return value'''
+def hi():
+    return "friends"
+value = hi()
+print("Wishes:",value) # Wishes: friends
+'''4.with Arguments and Return value'''
+def add(a,b):
+    return a+b
+res = add(2,5)
+print("Sum:",res)  #Sum: 7 
