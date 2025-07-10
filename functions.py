@@ -77,3 +77,20 @@ def add(a,b):
     return a+b
 res = add(2,5)
 print("Sum:",res)  #Sum: 7 
+
+''' Day-7 - 10/07/2025 '''
+# #Call by value
+def modify(x):
+    x = x+5
+    print("Inside:",x)
+a = 20
+modify(a)
+print("Outisde:",a)
+
+#Call by reference
+def item(list):
+    list.append(99)
+    print("inside:",list)
+num = [1,2,3]
+item(num)
+print("Outside:",num)
