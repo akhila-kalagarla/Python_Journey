@@ -8,6 +8,21 @@ print(type(str))
 #Access:
 s = "Hello world"
 print(s[0]) # H
+'''Slicing'''
 print(s[0:5]) # Hello
-print(s+"!") # HEllo world!
+'''Concatination'''
+print(s+"!") # Hello world!
+'''Repetation'''
 print(s*2) # Hello worldHello world
+
+#String methods
+'''Upper()'''
+s = "hello"
+print(s.upper()) # HELLO
+'''lower()'''
+s = "HELLO"
+print(s.lower()) # hello
+'''Replace()'''
+s = "Hello"
+print(s.replace('o','l')) # Helll
+
