@@ -1,28 +1,73 @@
-#String 
-'''A string is a squence of characters enclosed in single (''), double (""), or triple quotes (''' ''').
-Strings are immutable, meaning their characters cannot be changed once created'''
-str = '''hello'''
-print(type(str))
+# #String 
+# '''A string is a squence of characters enclosed in single (''), double (""), or triple quotes (''' ''').
+# Strings are immutable, meaning their characters cannot be changed once created'''
+# str = '''hello'''
+# print(type(str))
 
-#String operations
-#Access:
-s = "Hello world"
-print(s[0]) # H
-'''Slicing'''
-print(s[0:5]) # Hello
-'''Concatination'''
-print(s+"!") # Hello world!
-'''Repetation'''
-print(s*2) # Hello worldHello world
+# #String operations
+# #Access:
+# s = "Hello world"
+# print(s[0]) # H
+# '''Slicing'''
+# print(s[0:5]) # Hello
+# '''Concatination'''
+# print(s+"!") # Hello world!
+# '''Repetation'''
+# print(s*2) # Hello worldHello world
 
-#String methods
-'''Upper()'''
-s = "hello"
-print(s.upper()) # HELLO
-'''lower()'''
-s = "HELLO"
-print(s.lower()) # hello
-'''Replace()'''
-s = "Hello"
-print(s.replace('o','l')) # Helll
+# #String methods
+# '''Upper()'''
+# s = "hello"
+# print(s.upper()) # HELLO
+# '''lower()'''
+# s = "HELLO"
+# print(s.lower()) # hello
+# '''Replace()'''
+# s = "Hello"
+# print(s.replace('o','l')) # Helll
+# '''strip()'''
+# s = " Hello motto "
+# print(s.lstrip())
+# print(s.rstrip())
+# print(s.strip())
+# '''split(',')'''
+# a = 'a,b,c'
+# print(*a.split(',')) # ['a', 'b', 'c']
+'''find()'''
+a = "Akhila"
+print(a.find('l')) # 4
+'''isalpha()'''
+a = "abc"
+print(a.isalpha()) # True
+'''Capitalize()'''
+a = "akhila"
+print(a.capitalize()) # Akhila
+'''Title()'''
+a = "akhila kalagarla"
+print(a.title()) # Akhila Kalagarla
+'''Swapcase()'''
+a = "AkHILa"
+print(a.swapcase()) # aKhilA
+'''Remove()'''
+a = "Akhila kalagarla"
+print(a.removesuffix("kalagarla"))  # Akhila
 
+a = "AkhilaKalagarla"
+b = a.removeprefix("Akhila") # Kalagarla
+print(b)
+
+'''isnumeric'''
+a = "1234"
+print(a.isnumeric()) # True
+a = "akki41"
+print(a.isalnum())
+a = "120"
+print(a.isdigit())
+a = "8421"
+print(a.isdecimal())
+a = "AKHILA"
+print(a.isupper())
+a = "akhila"
+print(a.islower())
+a = "Akhila Kalagarla"
+print(a.istitle())
