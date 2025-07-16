@@ -80,7 +80,6 @@ start --> index to begin slice
 end --> index to end slice
 step --> optional; step/jump size
 '''
-
 #Ex:-
 s = "kiet students"
 print(s[0:6]) # kiet s
@@ -96,3 +95,12 @@ print(s[:-3:]) # Kiet stude
 print(s[-1:-5:-1]) # stne
 s = "kietwcollegestudents"
 print(s[:-10:]) # kietwcolle
+
+'''string functions'''
+s = "AkhilaKalagarla"
+print(len(s))
+print(min(s))
+print(type(s))
+print(max(s))
+print(list(enumerate(s)))
+print(sorted(s))
