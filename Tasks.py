@@ -18,7 +18,7 @@ k = "-"
 print(k.join(a)) # A-k-h-i-l-a
 print(a.center(20,"*")) # *******Akhila*******
 print(a.ljust(10,"-")) # Akhila----
-print(a.rjust(30,"+")) # ++++++++++++++++++++++++Akhila
+print(a.rjust(15,"+")) # +++++++++Akhila
 
 '''to check the string is in lower or not'''
 n = "akhila"
@@ -39,3 +39,15 @@ print(a[1:-1:]) # khil
 '''To reverse a string'''
 a = "Akhila"
 print(a[::-1]) # alihkA
+
+# Hacker Ranker Question
+n = int(input())
+if n % 2 != 0:
+    print("weird")
+elif n % 2 == 0 and 2 <= n <=5:      
+    print("Not Weird")
+elif n % 2 == 0 and 6 <= n <=20:
+    print("Weird")
+else:
+    print("Not Weird")
+
