@@ -1,38 +1,38 @@
-# #String 
-# '''A string is a squence of characters enclosed in single (''), double (""), or triple quotes (''' ''').
-# Strings are immutable, meaning their characters cannot be changed once created'''
-# str = '''hello'''
-# print(type(str))
+#String 
+'''A string is a squence of characters enclosed in single (''), double (""), or triple quotes (''' ''').
+Strings are immutable, meaning their characters cannot be changed once created'''
+str = '''hello'''
+print(type(str))
 
-# #String operations
-# #Access:
-# s = "Hello world"
-# print(s[0]) # H
-# '''Slicing'''
-# print(s[0:5]) # Hello
-# '''Concatination'''
-# print(s+"!") # Hello world!
-# '''Repetation'''
-# print(s*2) # Hello worldHello world
+#String operations
+#Access:
+s = "Hello world"
+print(s[0]) # H
+'''Slicing'''
+print(s[0:5]) # Hello
+'''Concatination'''
+print(s+"!") # Hello world!
+'''Repetation'''
+print(s*2) # Hello worldHello world
 
-# #String methods
-# '''Upper()'''
-# s = "hello"
-# print(s.upper()) # HELLO
-# '''lower()'''
-# s = "HELLO"
-# print(s.lower()) # hello
-# '''Replace()'''
-# s = "Hello"
-# print(s.replace('o','l')) # Helll
-# '''strip()'''
-# s = " Hello motto "
-# print(s.lstrip())
-# print(s.rstrip())
-# print(s.strip())
-# '''split(',')'''
-# a = 'a,b,c'
-# print(*a.split(',')) # ['a', 'b', 'c']
+#String methods
+'''Upper()'''
+s = "hello"
+print(s.upper()) # HELLO
+'''lower()'''
+s = "HELLO"
+print(s.lower()) # hello
+'''Replace()'''
+s = "Hello"
+print(s.replace('o','l')) # Helll
+'''strip()'''
+s = " Hello motto "
+print(s.lstrip())
+print(s.rstrip())
+print(s.strip())
+'''split(',')'''
+a = 'a,b,c'
+print(*a.split(',')) # ['a', 'b', 'c']
 '''find()'''
 a = "Akhila"
 print(a.find('l')) # 4
@@ -88,3 +88,11 @@ print(s[1::]) # iet students
 print(s[:5:]) # kiet
 print(s[::2]) # ke tdns
 print(s[0:9:3]) # ktt
+'''Reverse slicing'''
+s = "Kiet students"
+print(s[-1::]) # s
+print(s[::-1]) # stneduts teiK
+print(s[:-3:]) # Kiet stude
+print(s[-1:-5:-1]) # stne
+s = "kietwcollegestudents"
+print(s[:-10:]) # kietwcolle
