@@ -1,18 +1,21 @@
-#Write a python program to find min and max values without using min,max methods
-arr = [2,8,10,28,19,0]
-value = val = arr[0]
-for i in arr:
-    if i > value:
-        value = i
-    if i < val:
-        val = i
-print(value)
-print(val)
-#Or
-l = [4,7,9,10,32,75,20]
-s = l.sort()
-min = l[0]
-max = l[-1]
-print(min,max)
-
-
+#Task 1 :- 16/07/2025
+'''Convert to Uppercase'''
+a = "Akhila"
+print(a.upper()) # AKHILA
+print(a.lower()) # akhila
+a = "akhila"
+print(a.capitalize()) # Akhila
+a = " akhila kalagarla "
+print(a.title()) # Akhila Kalagarla
+print(a.count("a")) # 6
+print(a.replace("kalagarla", "akki")) # akhila akki
+print(a.startswith("akhi")) # True
+print(a.endswith("garla")) # True
+print(a.find("kalagarla")) # 8
+print(a.strip()) # akhila kalagarla
+a = "Akhila"
+k = "-"
+print(k.join(a)) # A-k-h-i-l-a
+print(a.center(20,"*")) # *******Akhila*******
+print(a.ljust(10,"-")) # Akhila----
+print(a.rjust(30,"+")) # ++++++++++++++++++++++++Akhila
