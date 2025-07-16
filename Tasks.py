@@ -19,3 +19,23 @@ print(k.join(a)) # A-k-h-i-l-a
 print(a.center(20,"*")) # *******Akhila*******
 print(a.ljust(10,"-")) # Akhila----
 print(a.rjust(30,"+")) # ++++++++++++++++++++++++Akhila
+
+'''to check the string is in lower or not'''
+n = "akhila"
+a = n.lower()
+if n == a:
+    print("True")
+else:                # True
+    print("False")
+'''To check the given string is palindrone or not'''
+a = "madam"
+if a == a[::-1]:
+    print("palindrome")
+else:                # palindrome
+    print("not")
+'''Remove first and last character'''
+a = "Akhila"
+print(a[1:-1:]) # khil
+'''To reverse a string'''
+a = "Akhila"
+print(a[::-1]) # alihkA
