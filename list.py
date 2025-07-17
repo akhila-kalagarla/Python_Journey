@@ -74,4 +74,3 @@ print(lst) # [5, 4, 3, 2, 1]
 lst = [10,20,30,40]
 lst.reverse()
 print(lst) # [40, 30, 20, 10]
-
