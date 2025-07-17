@@ -48,3 +48,10 @@ print(lst)
 lst = [1,2,3,4,5,3,3,3]
 a = lst.count(3) 
 print(a) # 4
+
+'''index method'''
+lst = [1,2,3,4,5,3,3,3]
+a = lst.index(4) 
+print(a)  # 3
+
+''''''
