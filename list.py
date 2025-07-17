@@ -1,15 +1,15 @@
 lst = [1,2,3,4]
-print(lst)
-print(type(lst))
+print(lst) # [1, 2, 3, 4]
+print(type(lst)) # <class 'list'>
 lst[0] = 0
-print(lst)
+print(lst) # [0, 2, 3, 4]
 
 '''List slicing'''
 list = [10,20,30,40,50]
-print(list[1:3:1])
-print(list[0:4:2])
-print(list[::-1])
-print(list[::-2])
+print(list[1:3:1]) # [20, 30]
+print(list[0:4:2]) # [10, 30]
+print(list[::-1]) # [50, 40, 30, 20, 10]
+print(list[::-2]) # [50, 30, 10]
 
 '''List methods'''
 
@@ -65,3 +65,4 @@ print(lst) # [5, 4, 3, 2, 1]
 lst = [10,20,30,40]
 lst.reverse()
 print(lst) # [40, 30, 20, 10]
+
