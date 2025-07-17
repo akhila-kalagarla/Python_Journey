@@ -4,6 +4,7 @@ print(type(lst))
 lst[0] = 0
 print(lst)
 
+'''List slicing'''
 list = [10,20,30,40,50]
 print(list[1:3:1])
 print(list[0:4:2])
@@ -73,3 +74,4 @@ print(lst) # [5, 4, 3, 2, 1]
 lst = [10,20,30,40]
 lst.reverse()
 print(lst) # [40, 30, 20, 10]
+
