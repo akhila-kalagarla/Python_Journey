@@ -67,3 +67,56 @@ print(a[-400:3]) # [1, 2, 3]
 '''5Q.'''
 a = [1,2,3,4,5]
 print(a[::-2]) # [5, 3, 1]
+
+'''Add elements to a list'''
+a = [1,2,3,4,5,6]
+a.append(7)
+print(a) # [1, 2, 3, 4, 5, 6, 7]
+'''Add elements at a specific position'''
+a = [1,2,3,4,5,6]
+a.insert(0,0)
+print(a) # [0, 1, 2, 3, 4, 5, 6]
+'''Delete a specific element'''
+a = [0,1,2,3,4,5,6,7]
+a.pop(0)
+print(a) # [1, 2, 3, 4, 5, 6, 7]
+'''Remove and reverse an element'''
+a = [1,2,3,4,5,6,7,8]
+a.remove(8)
+print(a) # [1, 2, 3, 4, 5, 6, 7]
+a.reverse()
+print(a) # [7, 6, 5, 4, 3, 2, 1]
+'''Sort elements in ascending order'''
+a = [1,2,7,4,6,3,5]
+a.sort()
+print(a) # [1, 2, 3, 4, 5, 6, 7]
+'''Separate Even and Odd numbers'''
+a = [1,2,3,4,5,6,7,8]
+e = []
+o = []
+for i in a:
+    if i % 2 == 0:
+        e.append(i)
+    else:
+        o.append(i)
+print(e) # [2, 4, 6, 8]
+print(o) # [1, 3, 5, 7] 
+
+'''Hackerranker Question'''
+n = int(input())
+a = []
+g = []
+for i in range(n):
+    name = input()
+    marks = float(input())
+    a.append([name, marks])
+    g.append(marks)
+g = sorted(set(g))
+second_lowest = g[1]
+names = []
+for val in a:
+    if val[1] == second_lowest:
+        names.append(val[0])
+names.sort()
+for nm in names:
+    print(nm)
