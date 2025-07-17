@@ -10,6 +10,7 @@ print(list[0:4:2])
 print(list[::-1])
 print(list[::-2])
 
+'''List methods'''
 '''Append method'''
 lst = [10,20,30]
 lst.append(20) # [10, 20, 30, 20]
