@@ -54,4 +54,21 @@ lst = [1,2,3,4,5,3,3,3]
 a = lst.index(4) 
 print(a)  # 3
 
-''''''
+'''clear'''
+lst = [1,2,3,4,5,3,3,3]
+lst.clear()
+print(lst) # []
+
+'''sort method'''
+lst = [1,4,2,3,5]
+lst.sort()
+print(lst) # [1, 2, 3, 4, 5]
+print(*lst) # 1 2 3 4 5
+lst = [1,4,2,3,5]
+lst.sort(reverse=True)
+print(lst) # [5, 4, 3, 2, 1]
+
+'''reverse method'''
+lst = [10,20,30,40]
+lst.reverse()
+print(lst) # [40, 30, 20, 10]
