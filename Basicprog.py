@@ -211,3 +211,4 @@ for i in a:
         c += 1
 print(*n)
 print(c)
+
