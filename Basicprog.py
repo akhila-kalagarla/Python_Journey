@@ -167,4 +167,47 @@ def top(marks):
 students = {"Anil":88, "Sunil":92, "Priya":85, "Rekha":92}
 print(top(students))
 
+# To print sum of elements in a list
+a = [3,5,2,8]
+print(sum(a)) # 18
+#OR
+sum = 0
+for i in a:
+    sum += i
+print(sum) # 18
+#OR
+n = int(input())
+s = 0
+a = list(map(int, input().split()))
+for i in range(n):
+    s += a[i]
+print(s)
 
+#Convert list to a tuple
+a = ['apple','banana','mango']
+print(tuple(a)) # ('apple', 'banana', 'mango')
+
+# To print min and max
+a = (1,2,3,4,5)
+print(*a[:1:])
+print(*a[-1::])
+#OR
+a = tuple(map(int, input().split()))
+b = sorted(a)
+print(*b[:1:])
+print(*b[-1::])
+
+# To print the count that a particular elements are repeated
+a = (1,2,3,2,4,5,6,2)
+print(a.count(2))
+
+a = tuple(map(int, input().split()))
+n = []
+c = 1
+for i in a:
+    if i not in n:
+        n.append(i)
+    else:
+        c += 1
+print(*n)
+print(c)
