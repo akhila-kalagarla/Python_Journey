@@ -66,4 +66,5 @@ lst = [10,20,30,40]
 lst.reverse()
 print(lst) # [40, 30, 20, 10]
 
+'''Date:- 23/07/25 Wednesday'''
 ### list comprehension
