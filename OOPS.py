@@ -1,3 +1,4 @@
+'''Real time example to understand the oops concept'''
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -20,6 +21,7 @@ dog.speak()  # Buddy says Woof!
 cat.speak()  # Whiskers says Meow!
 
 ''' Simple example'''
+print()
 class Student:
     def __init__(self, name, roll):
         self.name = name
@@ -31,10 +33,10 @@ class Student:
 
 # Creating objects
 student1 = Student("Akhila", 101)
-student2 = Student("Ravi", 102)
+student2 = Student("Nandu", 102)
 
 # Calling method
 student1.display_info()
-print()  # Just to add a blank line
+print("------------------")  # Just to add a blank line
 student2.display_info()
 
