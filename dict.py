@@ -4,4 +4,12 @@ print(phn["smith"]) # 98270456902
 
 a = {1:"a",2:"b",3:"c",4:"d"}
 print(a[1]) # v
+'''Example using user input'''
+n = int(input())
+dict = {}
+for _ in range(n):
+    k = input()
+    v = input()
+    dict[k] = v
+print(dict) # {'1': 'akki', '2': 'nandu', '3': 'naya', '4': 'bharath'}
 
