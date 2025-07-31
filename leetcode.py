@@ -10,4 +10,4 @@ suffix = 1
 for i in range(n -1, -1, -1):
     op[i] *= suffix
     suffix *= nums[i]
-print(op)
+print(op) # [24, 12, 8, 6]
