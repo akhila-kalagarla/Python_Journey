@@ -5,19 +5,49 @@
 # car1 = car()
 # print(car1.colour) # White
 # print(car.colour) # White
-
-class car:
-    def __init__(self,name,colour):
-        self.name = name
-        self.colour = colour
-    def vehical(self):
-        print("The car spped and colour:",self.name,",",self.colour)
-car1 = car("BMW","white")
-car2 = car("AUDI","Blue")
-print(car1.name) 
-print(car2.name) 
-car1.vehical() 
-car2.vehical() 
+# '''2.'''
+# class car:
+#     def __init__(self,name,colour):
+#         self.name = name
+#         self.colour = colour
+# car1 = car("Volvo","Black")
+# car2 = car("Royal","Grey")
+# print(car1.colour) 
+# print(car2.name) 
+# '''3.'''
+# class car:
+#     def __init__(self,name,colour):
+#         self.name = name
+#         self.colour = colour
+#     def cardetails(self,weight,speed):
+#         print(f"{weight}kg,{speed}km/h")
+# car1 = car("bmw","white")
+# # print(car1.colour)
+# car1.cardetails(250,"100kmph") # 250kg,100kmphkm/h
+# '''4.'''
+# class student:
+#     def __init__(self,name,age):
+#         self.name = name
+#         self.age = age
+#     def studetails(self,nickname,rollno):
+#         print(f"I am {nickname} and my roll no is {rollno}")
+# p1 = student("Akhila",20)
+# print(p1.name) # Akhila
+# print(p1.age) # 20
+# p1.studetails("Akki","22JN1A4506") # I am Akki and my roll no is 22JN1A4506
+# '''5.'''
+# class car:
+#     def __init__(self,name,colour):
+#         self.name = name
+#         self.colour = colour
+#     def vehical(self):
+#         print("The car spped and colour:",self.name,",",self.colour)
+# car1 = car("BMW","white")
+# car2 = car("AUDI","Blue")
+# print(car1.name) 
+# print(car2.name) 
+# car1.vehical() 
+# car2.vehical() 
 
 # #A class and object  in oops
 # '''Class : A blueprint for objects
@@ -34,7 +64,6 @@ car2.vehical()
 # print(p2.name) # Pushpa
 # p1.greet() # hello my name is Akhila and i am 20 years old
 # p2.greet() # hello my name is Pushpa and i am 21 years old
-
 
 # # Encapsulation
 # '''Hiding internal data by making variables private'''
