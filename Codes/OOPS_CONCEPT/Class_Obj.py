@@ -161,7 +161,7 @@ print(car1.name)
 print(car2.name) 
 car1.vehical() 
 car2.vehical() 
-'''Class meyhod'''
+'''Class method'''
 class student:
     number = 5
     @classmethod # To define the class is only class we use classmethod
