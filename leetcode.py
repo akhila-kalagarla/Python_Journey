@@ -1,4 +1,4 @@
-'''1.. '''
+'''1. '''
 '''2. To print the product of elements in the given array except the self element(problem 238 in LeetCode)'''
 nums = [1,2,3,4]
 n = len(nums)
