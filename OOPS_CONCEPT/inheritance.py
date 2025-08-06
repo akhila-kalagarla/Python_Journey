@@ -7,7 +7,7 @@
    - 3)Multiple
    - 4)Hierarchial
    - 5)Hybrid'''
-#Example on Single inheritance
+#Example on Single Inheritance
 class parent:
     def greet(self):
         print("Hello from parent")
