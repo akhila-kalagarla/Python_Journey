@@ -22,10 +22,9 @@ get_sound(cat()) # Meow
 
 # METHOD OVERLOADING 
 class grandparent:
-    def add(self,a = 1,b = 0,c = 0):
+    def add(self,a,b = 0,c = 0):
         return a+b+c
 s = grandparent()
-print(s.add())
 print(s.add(5))
 print(s.add(4,10))
-print(s.add(3,2,9))
+print(s.add(6,2,9))

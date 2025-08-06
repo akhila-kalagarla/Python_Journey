@@ -61,5 +61,5 @@ d = {}
 for i in arr:
     if len(i) % 2 == 0:
         d[i] = len(i)
-print(d) # ['akhila', 'nandhu', 'nayu']
+print(d) # ['akhila', 'nandhu', 'nayu'] 
 
