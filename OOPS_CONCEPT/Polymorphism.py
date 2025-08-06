@@ -20,7 +20,7 @@ def get_sound(Animal):
 get_sound(dog()) # Bark
 get_sound(cat()) # Meow
 
-# METHOD OVERLOADING 
+# METHOD OVERLOADING EXAMPLE
 class grandparent:
     def add(self,a,b = 0,c = 0):
         return a+b+c
