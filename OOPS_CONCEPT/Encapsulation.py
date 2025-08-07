@@ -17,7 +17,7 @@ print(s1.sur)
 print(s1._name)
 print(s1._student__marks)
 
-
+''''''
 class student:
     def __init__(self):
         self.__name = ""
@@ -28,7 +28,7 @@ class student:
 obj = student()
 obj.setname("Nandu")
 print(obj.getname()) # Nandu
-
+''''''
 class employee:
     def __init__(self,empid, name, salary, depart):
         self.emipd = empid 
