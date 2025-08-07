@@ -14,19 +14,6 @@ print(p2.name) # Pushpa
 p1.greet() # hello my name is Akhila and i am 20 years old
 p2.greet() # hello my name is Pushpa and i am 21 years old
 
-# Encapsulation
-'''Hiding internal data by making variables private'''
-class student:
-    def __init__(self, name, marks):
-        self.__name = name
-        self.__marks = marks
-    def details(self):
-        return f"{self.__name} got {self.__marks} marks"
-s1 = student("Akhila",95)
-s2 = student("Nandu",98)
-print(s1.details())
-# print(s1.name)
-
 #Polymorphism
 '''Same method name, different behavior based on object'''
 class Cat:
