@@ -1,0 +1,1 @@
+'''ABSTRACTION - Displaying only essential features and hiding unnecessary details'''
