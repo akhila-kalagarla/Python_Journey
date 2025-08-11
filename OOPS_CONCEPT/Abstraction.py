@@ -11,8 +11,7 @@ and ensures that the method is declared but does not provide an implementation, 
 '''Abstraction can be achieved in Python through abstract classes and interfaces,
 which allow you to define methods that must be implemented by subclasses, ensuring that the essential features are exposed while the implementation details remain hidden.
 Abstract classes can be created using the `abc` module, which provides a way to define abstract base classes with abstract methods that must be implemented by any concrete subclass.
-This allows for a clear separation of interface and implementation, promoting cleaner and more maintainable code.
-'''
+This allows for a clear separation of interface and implementation, promoting cleaner and more maintainable code.'''
 # Example of Abstraction using Abstract Base Class (ABC) in Python:
 # from abc import ABC, abstractmethod
 # class vehicle(ABC):
@@ -80,18 +79,29 @@ class PaymentGateway:
         pass 
 class CrediCardPayment(PaymentGateway):
     def pay(self, amount):
-        return "Paid amount via Credit Card"
-    def refund(self, amout):
-        return "Refunded amount to credit card"
+        return f"Paid {amount} via Credit Card"
+    def refund(self, amount):
+        return f"Refunded {amount} to credit card"
 class UPIpayment(PaymentGateway):
     def pay(self, amount):
-        return "Paid amount via UPI"
+        return f"Paid {amount} via UPI"
     def refund(self, amount):
-        return "Refunded amount to UPI"
+        return f"Refunded {amount} to UPI"
 A = [CrediCardPayment(),UPIpayment()]
 for i in A:
     print(i.pay(500))
     print(i.refund(200))
 
-
-
+# Real time example on Abstraction 
+from abc import ABC, abstractmethod
+class product(ABC):
+    def __init__(self, name, price):
+        self.name = name 
+        self.price = price 
+    @abstractmethod
+    def calculate_discounted_price(self):
+        pass 
+class electronics(product):
+    def calculate_discounted_price(self):
+        discount = 0.1 
+        return self.price - (self.price * discount)
