@@ -103,5 +103,19 @@ class product(ABC):
         pass 
 class electronics(product):
     def calculate_discounted_price(self):
-        discount = 0.1 
-        return self.price - (self.price * discount)
+        return self.price * 0.10 
+    def display(self):
+        print(f"Product: {self.name}, Price: {self.price}, Discounted Price: {self.calculate_discounted_price()}")
+class clothing(product):
+    def calculate_discounted_price(self):
+        return self.price * 0.20 
+    def display(self):
+        print(f"Product: {self.name}, Price: {self.price}, Discounted Price: {self.calculate_discounted_price()}")
+class grocery(product):
+    def calculate_discounted_price(self):
+        return self.price * 0.05 
+    def display(self):
+        print(f"Product: {self.name}, Price: {self.price}, Discounted Price: {self.calculate_discounted_price()}")
+A = [electronics("Laptop", 50000), clothing("T-shirt", 1000), grocery("Rice", 200)]
+for i in A:
+    i.display()
