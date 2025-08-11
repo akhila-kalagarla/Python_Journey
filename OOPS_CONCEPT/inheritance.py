@@ -1,7 +1,11 @@
 '''OVERRIDING - sub class rewrites the parent class code'''
 #Inheritance
-'''-One class inherits properties/methods of another
-   Inheritance is classified into 5t types
+'''Definition: Inheritance is a fundamental concept in object-oriented programming that allows one class (the child or subclass) to inherit
+attributes and methods from another class (the parent or superclass).
+This promotes code reuse and establishes a hierarchical relationship between classes, enabling the creation of more specialized classes based on existing ones.
+Inheritance allows subclasses to extend or modify the behavior of their parent classes, enabling polymorphism and dynamic method resolution.
+It is a key feature of OOP that supports the creation of complex systems by building on existing code, reducing redundancy, and enhancing maintainability.
+Inheritance is classified into 5 types:
    - 1)Single
    - 2)Multilevel
    - 3)Multiple

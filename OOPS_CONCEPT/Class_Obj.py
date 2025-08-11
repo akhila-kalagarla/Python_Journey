@@ -1,6 +1,14 @@
 #A class and object  in OOPs
 '''Class : A blueprint for objects
-   object : An instancenof the class'''
+   object : An instancenof the class
+Class is a collection of attributes and methods that define the properties and behaviors of an object.
+   Attributes are variables that hold data, and methods are functions that define the behavior of the object.
+Objects are instances of a class that can access the attributes and methods defined in the class.
+   Objects are created from classes, and they can have their own unique data while sharing the same structure and behavior defined by the class.
+Classes encapsulate data and functionality, allowing for better organization and modularity in code.
+   Objects can interact with each other and with the outside world through their methods, allowing for complex behaviors and interactions.
+A class can have multiple objects, and each object can have its own state (data) while sharing the same structure (methods).
+    Classes can also inherit from other classes, allowing for code reuse and the creation of more specialized classes.'''
 class person:
     def __init__(self,name,age):
         self.name = name

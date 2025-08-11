@@ -1,4 +1,8 @@
 '''Encapsulation - Hiding internal data by making variables private
+Definition: Encapsulation is a fundamental concept in object-oriented programming that involves bundling the data (attributes) and methods (functions) that operate on that data within a single unit, typically a class.
+This allows for better organization, modularity, and control over the data, as it restricts direct access to the internal state of an object and provides a clear interface for interaction.
+Encapsulation helps in protecting the integrity of the data by preventing external code from modifying it directly, thus ensuring that the object maintains a valid state.
+Encapsulation is achieved in Python through the use of access modifiers, which define the visibility and accessibility of class attributes and methods.
 Acess Modifiers: -
                 1)Public - self.name = name 
                 2)Private - self.__name = name 

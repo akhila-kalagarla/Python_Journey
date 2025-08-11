@@ -1,7 +1,12 @@
 '''Polymorphism - 
  Poly :- Many, 
  morphism :- Ways
- In polymorphism we have 4 types - 1) Compile time Polymorphism(Method overloading) - It execute the code in compilation time
+Definition: Polymorphism is a core concept in object-oriented programming that allows objects of different classes to be treated as objects of a common superclass.
+This enables a single interface to represent different underlying forms (data types).
+Polymorphism allows methods to be defined in a way that they can operate on objects of different classes, enabling flexibility and extensibility in code.
+It can be achieved through method overriding, where a subclass provides a specific implementation of a method that is already defined in its superclass, or through method overloading, where multiple methods with the same name can exist with different parameters.
+Polymorphism is a powerful feature that promotes code reuse and allows for dynamic method resolution, enabling developers to write more generic and adaptable code.
+In polymorphism we have 4 types - 1) Compile time Polymorphism(Method overloading) - It execute the code in compilation time
                                    2) Run time Polymorphism(Method overriding) 
                                    3) Operator overloading
                                    4) Duck typing '''
