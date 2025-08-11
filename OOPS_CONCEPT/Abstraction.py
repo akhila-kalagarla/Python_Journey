@@ -13,60 +13,60 @@ which allow you to define methods that must be implemented by subclasses, ensuri
 Abstract classes can be created using the `abc` module, which provides a way to define abstract base classes with abstract methods that must be implemented by any concrete subclass.
 This allows for a clear separation of interface and implementation, promoting cleaner and more maintainable code.'''
 # Example of Abstraction using Abstract Base Class (ABC) in Python:
-# from abc import ABC, abstractmethod
-# class vehicle(ABC):
-#     @abstractmethod
-#     def start(self):
-#         pass 
-#     @abstractmethod
-#     def stop(self):
-#         pass
-#     @abstractmethod
-#     def speed(self):
-#         pass
-#     @abstractmethod
-#     def cost(self):
-#         pass
-# class car(vehicle):
-#     def start(self):
-#         print("Car started")
-#     def stop(self):
-#         print("Car stopped")
-#     def speed(self):
-#         print("Car speed is 100km/h")
-#     def cost(self):
-#         print("Car cost is 1,00,000")
-# class bike(vehicle):
-#     def start(self):
-#         print("Bike started")
-#     def stop(self):
-#         print("Bike stopped")
-#     def speed(self):
-#         print("Bike speed is 60km/h")
-#     def cost(self):
-#         print("Bike cost is 95,000")
-# c = car()
-# b = bike()              
-# c.start() # Car started
-# c.stop() # Car stopped
-# b.speed() # Bike speed is 60km/h
-# b.cost() # Bike cost is 95,000
+from abc import ABC, abstractmethod
+class vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass 
+    @abstractmethod
+    def stop(self):
+        pass
+    @abstractmethod
+    def speed(self):
+        pass
+    @abstractmethod
+    def cost(self):
+        pass
+class car(vehicle):
+    def start(self):
+        print("Car started")
+    def stop(self):
+        print("Car stopped")
+    def speed(self):
+        print("Car speed is 100km/h")
+    def cost(self):
+        print("Car cost is 1,00,000")
+class bike(vehicle):
+    def start(self):
+        print("Bike started")
+    def stop(self):
+        print("Bike stopped")
+    def speed(self):
+        print("Bike speed is 60km/h")
+    def cost(self):
+        print("Bike cost is 95,000")
+c = car()
+b = bike()              
+c.start() # Car started
+c.stop() # Car stopped
+b.speed() # Bike speed is 60km/h
+b.cost() # Bike cost is 95,000
 
-# # Example of Abstraction Method 
-# from abc import ABC, abstractmethod
-# class Animal(ABC):
-#     @abstractmethod
-#     def sound(self):
-#         pass
-# class Dog(Animal):
-#     def sound(self):
-#         return "Bark"
-# class Cat(Animal):
-#     def sound(self):
-#         return "Meow"
-# A = [Cat(),Dog()]
-# for i in A:
-#     print(i.sound())
+# Example of Abstraction Method 
+from abc import ABC, abstractmethod
+class Animal(ABC):
+    @abstractmethod
+    def sound(self):
+        pass
+class Dog(Animal):
+    def sound(self):
+        return "Bark"
+class Cat(Animal):
+    def sound(self):
+        return "Meow"
+A = [Cat(),Dog()]
+for i in A:
+    print(i.sound())
 
 # Code for Payment Gateway(Intermediate)
 from abc import ABC, abstractmethod 
