@@ -73,22 +73,25 @@ This allows for a clear separation of interface and implementation, promoting cl
 from abc import ABC, abstractmethod 
 class PaymentGateway:
     @abstractmethod
-    def pay(self):
+    def pay(self, amount):
         pass 
-    def refund(self):
+    @abstractmethod
+    def refund(self, amount):
         pass 
-class CrediCardPayment:
-    def pay(self):
+class CrediCardPayment(PaymentGateway):
+    def pay(self, amount):
         return "Paid amount via Credit Card"
-    def refund(self):
+    def refund(self, amout):
         return "Refunded amount to credit card"
-class UPIpayment:
-    def pay(self):
+class UPIpayment(PaymentGateway):
+    def pay(self, amount):
         return "Paid amount via UPI"
-    def refund(self):
+    def refund(self, amount):
         return "Refunded amount to UPI"
 A = [CrediCardPayment(),UPIpayment()]
 for i in A:
-    print(i.pay())
-    print(i.refund())
+    print(i.pay(500))
+    print(i.refund(200))
+
+
 
