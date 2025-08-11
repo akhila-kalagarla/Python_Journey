@@ -53,20 +53,42 @@ This allows for a clear separation of interface and implementation, promoting cl
 # b.speed() # Bike speed is 60km/h
 # b.cost() # Bike cost is 95,000
 
-# Example of Abstraction Method 
-from abc import ABC, abstractmethod
-class Animal(ABC):
-    @abstractmethod
-    def sound(self):
-        pass
-class Dog(Animal):
-    def sound(self):
-        return "Bark"
-class Cat(Animal):
-    def sound(self):
-        return "Meow"
-A = [Cat(),Dog()]
-for i in A:
-    print(i.sound())
+# # Example of Abstraction Method 
+# from abc import ABC, abstractmethod
+# class Animal(ABC):
+#     @abstractmethod
+#     def sound(self):
+#         pass
+# class Dog(Animal):
+#     def sound(self):
+#         return "Bark"
+# class Cat(Animal):
+#     def sound(self):
+#         return "Meow"
+# A = [Cat(),Dog()]
+# for i in A:
+#     print(i.sound())
 
+# Code for Payment Gateway(Intermediate)
+from abc import ABC, abstractmethod 
+class PaymentGateway:
+    @abstractmethod
+    def pay(self):
+        pass 
+    def refund(self):
+        pass 
+class CrediCardPayment:
+    def pay(self):
+        return "Paid amount via Credit Card"
+    def refund(self):
+        return "Refunded amount to credit card"
+class UPIpayment:
+    def pay(self):
+        return "Paid amount via UPI"
+    def refund(self):
+        return "Refunded amount to UPI"
+A = [CrediCardPayment(),UPIpayment()]
+for i in A:
+    print(i.pay())
+    print(i.refund())
 
