@@ -15,4 +15,8 @@ some regular expression operations include searching, replacing, and splitting s
                 # *  - It matches zero or more occurrences of the preceding element.
                 # +  - It matches one or more occurrences of the preceding element.
                 # ?  - It matches zero or one occurrence of the preceding element.
-                
+                # {} - It specifies a specific number of occurrences of the preceding element.  
+                # /  - It is used to escape special characters in regular expressions.
+import re
+p = re.compile('\d')
+print(p.findall("I went to him at 11 A.M. on 4th July 1886"))
