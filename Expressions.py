@@ -101,3 +101,19 @@ findMonthAndDate("I was born on June 24")
                 Given Data:June 24
                 Month: June
                 Day: 24'''
+''''''
+import re 
+regex = r"([a-zA-Z]+) (\d+)"
+match = re.search(regex, "I was born on June 24")
+if match is not None:
+   print(f"Match at index {match.start()} {match.end()}")
+   print(f"full month: {match.group()}")
+   print(f"Month: {match.group(1)}")
+   print(f"Day: {match.group(2)}")
+else:
+   print("The regex pattern does not match")
+'''The output is:
+                Match at index 14 21
+                full month: June 24
+                Month: June
+                Day: 24'''
