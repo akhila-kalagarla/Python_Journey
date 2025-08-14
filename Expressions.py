@@ -55,6 +55,7 @@ print(p.findall("Aye said Mr. Gibenson stark")) # ['Aye', 'said', 'Mr', 'Gibenso
 import re
 p = re.compile(r'[A-Za-z0-9]+')
 print(p.findall("Aye said Mr. Gibenson stark,2025")) # ['Aye', 'said', 'Mr', 'Gibenson', 'stark', '2025'] 
+''''''
 import re
 def findMonthAndDate(string):
    regex = r"([a-zA-Z]+) (\d+)"
@@ -76,3 +77,27 @@ findMonthAndDate("I was born on June 24")
                 Day: 24
 
                 Not a valid date'''
+''''''
+import re
+def findMonthAndDate(string):
+   regex = r"([a-zA-Z]+) (\d+)"
+   match = re.search(regex, string)
+     
+   if match == None:
+      print("Not a valid date")
+      return
+   print("Given Data:%s"%(match.group()))
+   print("Month: %s" % (match.group(1)))
+   print("Day: %s" % (match.group(2)))
+#Driver code--main code
+findMonthAndDate("Jun 24")
+print()
+findMonthAndDate("I was born on June 24")
+'''the output is: 
+                Given Data:Jun 24
+                Month: Jun
+                Day: 24
+
+                Given Data:June 24
+                Month: June
+                Day: 24'''
