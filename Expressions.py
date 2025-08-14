@@ -18,5 +18,40 @@ some regular expression operations include searching, replacing, and splitting s
                 # {} - It specifies a specific number of occurrences of the preceding element.  
                 # /  - It is used to escape special characters in regular expressions.
 import re
-p = re.compile('\d')
-print(p.findall("I went to him at 11 A.M. on 4th July 1886"))
+p = re.compile(r'\d')
+print(p.findall("I went to him at 11 A.M. on 4th July 1886")) # ['1', '1', '4', '1', '8', '8', '6']
+import re
+p = re.compile(r'\d+')
+print(p.findall("I went to him at 11 A.M. on 4th July 1886")) # ['11', '4', '1886'] 
+'''Special Sequences in Regular Expressions:'''
+# \A - Matches the start of a string.
+# \b - Matches the string at the beginning or end of a string.
+# \B - Matches the string at the beginning but not at the end of a string.
+# \d - Matches any digit character (equivalent to [0-9]).
+# \D - Matches any non-digit character (equivalent to [^0-9]).
+# \s - Matches any whitespace character (space, tab, newline).
+# \S - Matches any non-whitespace character.
+# \w - matches if the string contains any word characters 
+# \Z - Matches the end of a string.
+'''Sets'''
+# [am] - Matches any character 'a' or 'm'.
+# [a-m] - Matches any character from 'a' to 'm'.
+# [^am] - Matches any character except 'a' or 'm'.
+# [0123] - Matches any character '0', '1', '2', or '3'.
+# [0-9] - Matches any digit character (equivalent to \d).
+# [0-5][0-9] - Matches any digit number from 00 to 59.
+import re
+p = re.compile(r'[a-e]')
+print(p.findall("Aye said Mr. Gibenson stark")) # ['e', 'a', 'd', 'b', 'e', 'a'] 
+import re
+p = re.compile(r'[A-Za-z]')
+print(p.findall("Aye said Mr. Gibe234nson stark")) # ['A', 'y', 'e', 's', 'a', 'i', 'd', 'M', 'r', 'G', 'i', 'b', 'e', 'n', 's', 'o', 'n', 's', 't', 'a', 'r', 'k']
+import re
+p = re.compile(r'[A-Za-z0-9]')
+print(p.findall("Aye said Mr. Gibe234nson stark")) # ['A', 'y', 'e', 's', 'a', 'i', 'd', 'M', 'r', 'G', 'i', 'b', 'e', '2', '3', '4', 'n', 's', 'o', 'n', 's', 't', 'a', 'r', 'k']
+import re
+p = re.compile(r'[A-Za-z]+')
+print(p.findall("Aye said Mr. Gibenson stark")) # ['Aye', 'said', 'Mr', 'Gibenson', 'stark']
+import re
+p = re.compile(r'[A-Za-z0-9]+')
+print(p.findall("Aye said Mr. Gibenson stark,2025")) # ['Aye', 'said', 'Mr', 'Gibenson', 'stark', '2025']
