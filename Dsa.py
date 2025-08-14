@@ -1,3 +1,15 @@
+'''Stack - A stack is a linear data structure that follows the Last In First Out (LIFO) principle.
+It means the last element added to the stack is the first one to be removed. 
+Stacks are used in various applications such as function call management, expression evaluation, and backtracking algorithms.
+Stack operations include:
+1. Push: Add an element to the top of the stack.
+2. Pop: Remove the top element from the stack.
+3. Peek: Retrieve the top element without removing it.
+4. isEmpty: Check if the stack is empty.
+5. Size: Get the number of elements in the stack.
+Stack can be implemented using lists or linked lists in Python.
+In Python, you can use a list to implement a stack, as it provides built-in methods like append() for push and pop() for pop operations.
+'''
 #To create a stack
 stack = []
 stack.append('Venkata Ramana')
