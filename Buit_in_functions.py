@@ -28,8 +28,8 @@
 
 # print(random.choice(["Apple","Grapes","Orange","Papaya"]))
 
-# import math,random
-# print(math.pow(2,4))
-# print(random.randint(200,500))
+import math,random
+print(math.pow(2,4))
+print(random.randint(200,500))
 
 
