@@ -18,13 +18,18 @@
 # print(math.gcd(10,30)) # 10 
 # print(math.lcm(2,5,10)) # 10 
 
-import random
-print(random.random())
-print(random.randint(1,10))
+# import random
+# print(random.random())
+# print(random.randint(1,10))
 
-fruits = ["Apple","Grapes","Orange","papaya","pineapple"]
-random.shuffle(fruits)
-print(fruits)
+# fruits = ["Apple","Grapes","Orange","papaya","pineapple"]
+# random.shuffle(fruits)
+# print(fruits)
 
-print(random.choice(["Apple","Grapes","Orange","Papaya"]))
+# print(random.choice(["Apple","Grapes","Orange","Papaya"]))
+
+# import math,random
+# print(math.pow(2,4))
+# print(random.randint(200,500))
+
 
