@@ -12,5 +12,6 @@ print(math.ceil(4.2)) # 5
 print(math.floor(4.8)) # 4
 print(math.trunc(4.8)) # 4
 print(math.fabs(-4.8)) # 4.8
-print(math.sin(math.pi/2)) # 1.0
-    
+print(math.degrees(math.pi)) # 180.0
+print(math.radians(180)) # 3.141592653589793
+print(math.ceil(18.6543)) # 19
