@@ -20,5 +20,11 @@
 
 import random
 print(random.random())
-fruits = ["Apple","Grapes","Orange"]
+print(random.randint(1,10))
+
+fruits = ["Apple","Grapes","Orange","papaya","pineapple"]
+random.shuffle(fruits)
+print(fruits)
+
+print(random.choice(["Apple","Grapes","Orange","Papaya"]))
 
