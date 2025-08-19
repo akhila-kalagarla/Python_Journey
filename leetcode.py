@@ -28,3 +28,14 @@ nums=[1,1,2,3,3,4,4,5]
 obj = Solution()
 k = obj.removeduplicates(nums)
 print(nums[:k]) # [1, 2, 3, 4, 5]
+
+'''3136 - To check the given string is valid or not by using regular expressions'''
+import re
+class Solution:
+    def isvalid(self, word:str) -> bool:
+        return bool(re.fullmatch(r'(?i)(?=.[aeiou])(?=bcdfghjklmnpqrstvwxyz])[a-z0-9]{3,}', word))
+word = "abc12"
+obj = Solution()    
+print(obj.isvalid(word))  # True
+
+
