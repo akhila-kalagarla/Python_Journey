@@ -1,8 +1,8 @@
 # class Node:
-#     def __init__(self, value = 0, next_node = None):
+#     def __init__(self, value = 0, next_node = None ):
 #         self.data = value
 #         self.next = next_node 
-# p1 = Node(10,None)
+# p1 = Node(10,None )
 # p2 = Node(20)
 # p3 = Node()
 # print(p1.data)
@@ -10,13 +10,13 @@
 # print(p3.data)
 
 class Node:
-    def __init__(self, data):   # Corrected __init__
+    def __init__(self, data):   
         self.data = data
-        self.next = None 
+        self.next = None  
 
 class LinkedList:
-    def __init__(self):        # Corrected __init__
-        self.head = None
+    def __init__(self):        
+        self.head = None 
 
     def insert_begin(self, data):
         new = Node(data)
@@ -32,12 +32,12 @@ class LinkedList:
 
         temp = self.head
         for i in range(pos-1):
-            if temp is None:   # Invalid position
+            if temp is None :   # Invalid position
                 print("Position out of range")
                 return
             temp = temp.next 
 
-        if temp is None:
+        if temp is None :
             print("Position out of range")
             return
 
@@ -49,7 +49,7 @@ class LinkedList:
         while temp:
             print(temp.data, end=" -> ")
             temp = temp.next 
-        print("None")
+        print("None ")
 
 # Example usage
 l1 = LinkedList()
@@ -75,12 +75,12 @@ def delete_begin(self):
         print("List is empty")
         return
     if not self.head.next:
-        self.head = None
+        self.head = None 
         return
     temp = self.head
     while temp.next.next:
         temp = temp.next
-    temp.next = None
+    temp.next = None 
 
 # Deletion at position
 def delete_pos(self, pos):
@@ -100,13 +100,13 @@ def delete_pos(self, pos):
         print("Position out of range")
         return
     temp.next = temp.next.next
-
+    temp = temp.next
 def display(self):
         temp = self.head 
         while temp:
             print(temp.data, end=" -> ")
             temp = temp.next 
-        print("None")
+        print("None ")
 
 # Example usage
 l1 = LinkedList()
@@ -116,4 +116,3 @@ l1.insert_pos(1, 50)   # Insert at position 1
 l1.insert_pos(0, 100)  # Insert at beginning
 l1.insert_pos(3, 60)   # Insert at position 3
 l1.display()
-
