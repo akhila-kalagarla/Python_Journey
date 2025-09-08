@@ -81,7 +81,7 @@ def delete_begin(self):
     while temp.next.next:
         temp = temp.next
     temp.next = None
-    
+
 # Deletion at position
 def delete_pos(self, pos):
     if not self.head:
@@ -101,4 +101,19 @@ def delete_pos(self, pos):
         return
     temp.next = temp.next.next
 
+def display(self):
+        temp = self.head 
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next 
+        print("None")
+
+# Example usage
+l1 = LinkedList()
+l1.insert_begin(30)
+l1.insert_begin(80)
+l1.insert_pos(1, 50)   # Insert at position 1
+l1.insert_pos(0, 100)  # Insert at beginning
+l1.insert_pos(3, 60)   # Insert at position 3
+l1.display()
 
