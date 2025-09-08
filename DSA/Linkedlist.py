@@ -61,11 +61,44 @@ l1.insert_pos(3, 60)   # Insert at position 3
 l1.display()
 
 ### Deletion in Linked List ###
-# Deletion at begining
 
+# Deletion at begining
 def delete_begin(self):
     if not self.head:
         print("List is empty")
         return
     self.head = self.head.next
+
+# Deletion at end
+def delete_begin(self):
+    if not self.head:
+        print("List is empty")
+        return
+    if not self.head.next:
+        self.head = None
+        return
+    temp = self.head
+    while temp.next.next:
+        temp = temp.next
+    temp.next = None
     
+# Deletion at position
+def delete_pos(self, pos):
+    if not self.head:
+        print("List is empty")
+        return
+    if pos == 0:
+        self.head = self.head.next
+        return
+    temp = self.head
+    for i in range(pos-1):
+        if not temp.next:
+            print("Position out of range")
+            return
+        temp = temp.next
+    if not temp.next:
+        print("Position out of range")
+        return
+    temp.next = temp.next.next
+
+
