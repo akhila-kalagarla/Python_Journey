@@ -50,7 +50,23 @@ class LinkedList:
             print(temp.data, end=" -> ")
             temp = temp.next 
         print("None ")
-
+    def update(self, pos,new_data):
+        if not self.head:
+            return
+        temp = self.head
+        for i in range(pos):
+            if not temp:
+                return
+            temp = temp.next
+    def traverse(self):
+        if not self.head:
+            print("List is empty")
+            return
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
 # Example usage
 l1 = LinkedList()
 l1.insert_begin(30)
