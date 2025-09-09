@@ -209,13 +209,104 @@ D.display()
 
 
 # DELETION AT BEGINNING, END AND GIVEN POSITION
-# Deletion at beginning
-def delete_begin(self):
-    if not self.head:
-        print("List is empty")
+class DNode:
+    def __init__(self):
+        self.head = None
+
+    # Insertion at beginning
+    def insert_begin(self, data):
+        new = Node(data)
+        if not self.head:
+            self.head = new 
+            return
+        new.next = self.head
+        self.head.prev = new
+        self.head = new
+    
+    # Insertion at end
+    def insert_end(self, data):
+        new = Node(data)
+        if not self.head:
+            self.head = new 
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new 
+        new.prev = temp
+
+    # Insertion at given position
+    def insert_pos(self, pos, data):
+        new = Node(data)
+        if pos == 0:
+            self.insert_begin(data)
+            return
+        temp = self.head
+        for i in range(pos - 1):
+            if not temp:
+                print("Position out of range")
+                return
+            temp = temp.next
+        if not temp:
+            print("Position out of range")
+            return
+        new.next = temp.next
+        new.prev = temp
+        if temp.next:
+            temp.next.prev = new
+        temp.next = new
+
+    # Deletion at beginning
+    def delete_begin(self):
+        if not self.head:
+            print("List is empty")
             return
         if not self.head.next:
             self.head = None
             return
         self.head = self.head.next
         self.head.prev = None
+
+    # Deletion at end
+    def delete_end(self):
+        if not self.head:
+            print("List is empty")
+            return
+        if not self.head.next:
+            self.head = None
+            return
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.prev.next = None
+
+    # Deletion at given position
+    def delete_pos(self, pos):
+        if not self.head:
+            print("List is empty")
+            return
+        if pos == 0:
+            self.delete_begin()
+            return
+        temp = self.head
+        for i in range(pos):
+            if not temp:
+                print("Position out of range")
+                return
+            temp = temp.next
+        if not temp:
+            print("Position out of range")
+            return
+        if temp.next:
+            temp.next.prev = temp.prev
+        if temp.prev:
+            temp.prev.next = temp.next
+        else:
+            self.head = temp.next
+        temp = None # Free memory
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" -> ")
+            temp = temp.next
+        print("None")
