@@ -2,6 +2,7 @@
 It means the last element added to the stack is the first one to be removed. 
 Stacks are used in various applications such as function call management, expression evaluation, and backtracking algorithms.
 Stack operations include:
+
 1. Push: Add an element to the top of the stack.
 2. Pop: Remove the top element from the stack.
 3. Peek: Retrieve the top element without removing it.
@@ -9,6 +10,14 @@ Stack operations include:
 5. Size: Get the number of elements in the stack.
 Stack can be implemented using lists or linked lists in Python.
 In Python, you can use a list to implement a stack, as it provides built-in methods like append() for push and pop() for pop operations.
+
+Overflow and underflow conditions can be handled by checking the size of the stack before performing push or pop operations.
+Overflow occurs when trying to push an element onto a full stack. 
+Underflow occurs when trying to pop an element from an empty stack.
+
+# Implementation of stack 
+using Array (list) in Python
+using linked list in Python - Dequeue from collections, LIFO Queue
 '''
 #To create a stack
 stack = []
