@@ -145,6 +145,7 @@ l1.delete_pos(1)
 l1.display()
 
 ### Double linked list ### 
+#INSERTION AND DELETION AT BEGINNING, END AND GIVEN POSITION
 class DNode:
     def __init__(self):
         self.head = None
@@ -191,3 +192,30 @@ class DNode:
         if temp.next:
             temp.next.prev = new
         temp.next = new
+    
+    def display(self):
+        temp = self.head
+        while temp:
+            print(temp.data, end=" <-> ")
+            temp = temp.next
+        print("None")
+D = DNode()
+D.insert_begin(10)
+D.insert_begin(20)
+D.insert_end(30)
+D.insert_pos(1, 25)
+D.insert_pos(0, 5)
+D.display()
+
+
+# DELETION AT BEGINNING, END AND GIVEN POSITION
+# Deletion at beginning
+def delete_begin(self):
+    if not self.head:
+        print("List is empty")
+            return
+        if not self.head.next:
+            self.head = None
+            return
+        self.head = self.head.next
+        self.head.prev = None
