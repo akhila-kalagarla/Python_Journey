@@ -72,16 +72,19 @@ print(stack)
 # Code using LIFOQueue
 from queue import LifoQueue
 stack = LifoQueue()
+#to take the max size of the stack
+stack = LifoQueue(maxsize=5)
 #To add elements to the stack
 stack.put('Venkata Ramana')
 stack.put('Rohini')
 stack.put('Akhila')
-stack.put('Kishor')
+stack.put('Nandu')
 stack.put('Naya sri')
 print("Family of Kalagarla's:",list(stack.queue))
 #To print peek element from the stack
 topelement = stack.queue[-1]
 print(topelement)
+print(list(stack.queue))
 #To remove the element from the stack
 poppedelement = stack.get()
 print(poppedelement)
@@ -89,42 +92,45 @@ print(list(stack.queue))
 #To know the the stack size 
 n = stack.qsize()
 print(n)
+# #To know the the stack is empty or not
+a = stack.empty()
+print(a)
 
 
 
 
-# creating a dedicated Stack class provides better encapsulation and additional functionality:
-class Stack:
-    def __init__(self):
-        self.stack = []
-    def push(self, element):
-        self.stack.append(element)
-    def pop(self):
-        if self.isEmpty():
-            return "Stack is empty"
-        return self.stack.pop()
-    def peek(self):
-        if self.isEmpty():
-            return "Stack is empty"
-        return self.stack[-1]
-    def isEmpty(self):
-        return len(self.stack) == 0
-    def size(self):
-        return len(self.stack)
+# # creating a dedicated Stack class provides better encapsulation and additional functionality:
+# class Stack:
+#     def __init__(self):
+#         self.stack = []
+#     def push(self, element):
+#         self.stack.append(element)
+#     def pop(self):
+#         if self.isEmpty():
+#             return "Stack is empty"
+#         return self.stack.pop()
+#     def peek(self):
+#         if self.isEmpty():
+#             return "Stack is empty"
+#         return self.stack[-1]
+#     def isEmpty(self):
+#         return len(self.stack) == 0
+#     def size(self):
+#         return len(self.stack)
 
-mystack = Stack()
-mystack.push('Chitti babu')
-mystack.push('kantham')
-mystack.push('Ajay')
-mystack.push('Pushpa')
-mystack.push('Surimma')
-print("Family of Kolli's:",mystack.stack)
-print("peek element",mystack.peek())
-print("popped element:",mystack.pop())
-print("length of the stack:",mystack.size())
-print("Stack is empty or not:", mystack.isEmpty())
-print("Stack after operations:", mystack.stack)
+# mystack = Stack()
+# mystack.push('Chitti babu')
+# mystack.push('kantham')
+# mystack.push('Ajay')
+# mystack.push('Pushpa')
+# mystack.push('Surimma')
+# print("Family of Kolli's:",mystack.stack)
+# print("peek element",mystack.peek())
+# print("popped element:",mystack.pop())
+# print("length of the stack:",mystack.size())
+# print("Stack is empty or not:", mystack.isEmpty())
+# print("Stack after operations:", mystack.stack)
 
 
 
-#Create a stack and perform stack operations using linked list
+# #Create a stack and perform stack operations using linked list
