@@ -59,14 +59,43 @@ class linkedlist:
         prev.next = new_node
         if new_node.next == None:
             self.tail = new_node
+    def deletelast(self):
+        temp = self.head
+        while temp.next!=self.tail:
+            temp = temp.next
+        temp.next = None
+        self.tail = temp
+    def deletefirst(self):
+        self.head = self.head.next
+    def deleteatindex(self, index):
+        temp = self.findatindex(index-1)
+        temp.next = temp.next.next
+    def searchnode(self, key):
+        temp = self.head
+        while temp != None:
+            if temp.data == key:
+                return True 
+            else:
+                temp = temp.next
+            return False
+
 
 l1 = linkedlist()   
 l1.addlast(10)
 l1.addlast(20)
 l1.addlast(30)
-l1.add(40)
-l1.insert(2,25)
+l1.addlast(40)
+l1.addlast(50)
+l1.addlast(60)
 l1.printdata()
-res = l1.findatindex(4)
+
+l1.deletefirst()
 print()
-print(res.data)
+l1.printdata()
+l1.deletelast()
+print()
+l1.printdata()
+l1.deleteatindex(1)
+print()
+l1.printdata()
+
