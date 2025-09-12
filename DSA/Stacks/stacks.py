@@ -29,40 +29,40 @@ print(st.pop())
 print(st.stack)
 
 
-# ### Another Example
-# class Gatestudents:
-#     def __init__(self):
-#         self.stack = []
+### Another Example
+class Gatestudents:
+    def __init__(self):
+        self.stack = []
 
-#     def push(self, data):
-#         self.stack.append(data)
+    def push(self, data):
+        self.stack.append(data)
 
-#     def pop(self):
-#         if len(self.stack) == 0:
-#             return "Stack is empty"
-#         return self.stack.pop()
+    def pop(self):
+        if len(self.stack) == 0:
+            return "Stack is empty"
+        return self.stack.pop()
 
-#     def peek(self):
-#         if len(self.stack) == 0:
-#             return "Stack is empty"
-#         return self.stack[-1]
+    def peek(self):
+        if len(self.stack) == 0:
+            return "Stack is empty"
+        return self.stack[-1]
 
-#     def isEmpty(self):
-#         return len(self.stack) == 0
+    def isEmpty(self):
+        return len(self.stack) == 0
 
-#     def size(self):
-#         return len(self.stack)
+    def size(self):
+        return len(self.stack)
 
 
-# mystack = Gatestudents()
-# mystack.push('Venakataramana')
-# mystack.push('Rohini')
-# mystack.push('Akhila')
-# mystack.push('Nandu')
-# mystack.push('Naya Sri')
+mystack = Gatestudents()
+mystack.push('Venakataramana')
+mystack.push('Rohini')
+mystack.push('Akhila')
+mystack.push('Nandu')
+mystack.push('Naya Sri')
 
-# print("Popped:", mystack.pop())
-# print("Peek:", mystack.peek())
-# print("Is Empty?", mystack.isEmpty())
-# print("Size:", mystack.size())
-# print("Students in the gate:", mystack.stack)
+print("Popped:", mystack.pop())
+print("Peek:", mystack.peek())
+print("Is Empty?", mystack.isEmpty())
+print("Size:", mystack.size())
+print("Students in the gate:", mystack.stack)
