@@ -74,3 +74,32 @@ print("Front element of the queue:", q.front())
 print("Is the queue empty?", q.is_empty())
 print("Size of the queue:", q.size())
 
+
+class Queue:
+    def __init__(self):
+        self.q=[]
+
+    def enqueue(self,data):
+        self.q.append(data)
+    def isEmpty(self):
+        if len(self.q)==0:
+            return True
+        else:
+            return False
+    def dequeue(self):
+        if self.isEmpty():
+            print("Queue is Empty!")
+        else:
+            return self.q.pop(0)
+    def peek(self):
+        if self.isEmpty():
+            print("Queue is Empty!")
+        else:
+            return self.q[0]
+        
+q=Queue()
+q.enqueue(1)
+q.enqueue(2)
+q.enqueue(3)
+q.dequeue()
+print(q.peek())
