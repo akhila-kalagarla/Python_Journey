@@ -75,6 +75,8 @@ print("Is the queue empty?", q.is_empty())
 print("Size of the queue:", q.size())
 
 
+
+# Another Example
 class Queue:
     def __init__(self):
         self.q=[]
@@ -95,7 +97,6 @@ class Queue:
             print("Queue is Empty!")
         else:
             return self.q[0]
-        
 q=Queue()
 q.enqueue(1)
 q.enqueue(2)
