@@ -100,6 +100,7 @@ class LinkedList:
         temp.next = temp.next.next
 
     # Display list
+
     def display(self):
         temp = self.head 
         while temp:
@@ -150,7 +151,7 @@ l1.display()
 class DNode:
     def __init__(self):
         self.head = None
-
+    
     # Insertion at beginning
     def insert_begin(self, data):
         new = Node(data)
