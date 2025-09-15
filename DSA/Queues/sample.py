@@ -78,7 +78,6 @@ print("Size of the queue:", q.size())
 class Queue:
     def __init__(self):
         self.q=[]
-
     def enqueue(self,data):
         self.q.append(data)
     def isEmpty(self):
