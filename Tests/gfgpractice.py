@@ -1,10 +1,10 @@
-# x = 5
-# print(x)
-# y = x 
-# x = "Geeks"
-# print(x,y)
-# y = "computer"
-# print(x,y)
+x = 5
+print(x)
+y = x 
+x = "Geeks"
+print(x,y)
+y = "computer"
+print(x,y)
 
 # Swapping of 2 variables
 a = 5
