@@ -20,3 +20,7 @@ for i in a:
 print(c) # Output: 6 
 #OR
 print(len(a)) # Output: 6
+
+import keyword
+print("The list of keywords is : ")
+print(keyword.kwlist)
