@@ -102,21 +102,32 @@
 # print(e) # [2, 4, 6, 8]
 # print(o) # [1, 3, 5, 7] 
 
-# Hackerranker Question
-n = int(input())
-a = []
-g = []
-for i in range(n):
-    name = input()
-    marks = float(input())
-    a.append([name, marks])
-    g.append(marks)
-g = sorted(set(g))
-second_lowest = g[1]
-name = []
-for val in a:
-    if val[1] == second_lowest:
-        name.append(val[0])
-name.sort()
-for nm in name:
-    print("the grade is ",nm)
+# # Hackerranker Question
+# n = int(input())
+# a = []
+# g = []
+# for i in range(n):
+#     name = input()
+#     marks = float(input())
+#     a.append([name, marks])
+#     g.append(marks)
+# g = sorted(set(g))
+# second_lowest = g[1]
+# name = []
+# for val in a:
+#     if val[1] == second_lowest:
+#         name.append(val[0])
+# name.sort()
+# for nm in name:
+#     print("the grade is ",nm)
+
+# a = list(map(int, input().split()))
+# b = list(map(int, input().split()))
+# c = list(map(int, input().split()))
+# print("The matrix is:")
+# print(*a, *b, *c) 
+
+a = [list(map(int, input().split())) for _ in range(3)]
+print("The matrix is:")
+for row in a:
+    print(*row)
