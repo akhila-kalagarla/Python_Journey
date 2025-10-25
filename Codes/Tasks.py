@@ -126,3 +126,44 @@ b = list(map(int, input().split()))
 c = list(map(int, input().split()))
 print("The matrix is:")
 print(*a, *b, *c) 
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+c = list(map(int, input().split()))
+print("The matrix is:")
+print(c[0], b[0], a[0])
+print(c[1], b[1], a[1])
+print(c[2], b[2], a[2])
+
+a = list(map(int, input().split()))
+b = list(map(int, input().split()))
+c = list(map(int, input().split()))
+print("The matrix is:")
+print(a[2], b[2], c[2])
+print(a[1], b[1], c[1])
+print(a[0], b[0], c[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
