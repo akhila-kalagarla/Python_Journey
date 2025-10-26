@@ -131,3 +131,23 @@ if marks >=40:
         print("You have passed without scholarship")
 else: 
     print("You have failed")
+
+# To check whether a number is even or odd
+num = int(input("Enter a number:"))
+print("even" if num%2==0 else "odd")
+
+# To give suggestions based on weather using match case
+weather = input("Enter the weather(sunny/rainy/cold/hot/cloudy):").lower()
+match weather:
+    case "sunny":
+        print("Good for travelling")
+    case "rainy":
+        print("Not good for planning a trip")
+    case "cold":
+        print("Carry warm clothes")
+    case "hot":
+        print("Stay hydrated")
+    case "cloudy":
+        print("Might rain today") 
+    case _:
+        print("Invalid weather type")
