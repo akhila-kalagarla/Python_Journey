@@ -78,3 +78,56 @@ for i in a:
     name = i.get("name")
     if name:
         print(name)
+###
+food = []
+while True:
+    f = input("Enter your fav food")
+    if f == "Stop":
+        break 
+    food.append(f)
+print(food)
+# Using Walrus operator 
+food = []
+while (f := input("enter your fav food (or type stop to end):")) != "stop":
+    food.append(f)
+print(food)
+
+# Ternary conditional statement 
+age = 18
+c = "adult" if age >= 18 else "minor"
+print(c)
+
+# To check if the user has sufficient balance to buy a product 
+balance = float(input("ENTER YOUR BALANCE:"))
+price = float(input("ENTER THE PRICE OF THE PRODUCT:"))
+if balance >= price:
+    print("Purchase successful")
+else:
+    print("Insufficient balance")
+
+# Write a program to login to a website using username and password 
+username = input("Enter your username:")
+password = input("Enter your password:")
+if username == "admin" and password == "12334567":
+    print("Login successfull")
+else:
+    print("Check your credentials")
+###
+username = input("enter username:")
+password = input("enter password:")
+if username == "admin":
+    if password == "122334455":
+       print("login successful")
+    else:
+        print("Incorrect password")
+print("username not found")
+
+###To chech wether the student is passes with scholarship or not 
+marks = int(input("Enter your marks:"))
+if marks >=40:
+    if marks >= 80:
+        print("You have passed with scholarship")
+    else:
+        print("You have passed without scholarship")
+else: 
+    print("You have failed")
