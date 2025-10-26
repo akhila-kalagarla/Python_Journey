@@ -52,3 +52,29 @@ if x:
 x = 0
 if x:
    print(x,"is a number")
+
+# Print the min or max numbers using ternary operator 
+a, b = 10, 20 
+min = a if a<b else b 
+print(min) 
+max = a if a>b else b 
+print(max)
+
+# Walrus operator example in python 3.8
+num = [1, 2, 3, 4, 5]
+
+while (n := len(num)) > 0:
+    print(num.pop())
+print(num)
+#
+a = [{"id":1, "name":"Akhila", "age":20},
+     {"id":2, "name":"Nandu", "age":19},
+     {"id":3, "name":"Naya", "age":10}]
+for i in a:
+    if name:= i.get("name"):
+        print(name)
+print("Without walrus operator:")
+for i in a:
+    name = i.get("name")
+    if name:
+        print(name)
