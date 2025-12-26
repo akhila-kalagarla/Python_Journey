@@ -163,9 +163,43 @@ powers_of_two()
 # Input: x = 10
 # Output: 1 4 9
 # Explanation:From 1 to 10, numbers in powers of 2 are, 12, 22, 32 as 1, 4 and 9.
-def powers_of_two_limit(x):
+def num(x):
     i = 1
     while i*i <= x:
         print(i*i, end=" ")
-        i += 1
-powers_of_two_limit(10)
+        i += 1 
+    return ""
+x = int(input())
+print(num(x))
+
+# You are given a number n, take input of n and print its multiplication table in a single line using for loop till n * 10. 
+# Examples:
+# Input: n = 5
+# Output: 5 10 15 20 25 30 35 40 45 50
+n = int(input())
+for i in range(1, 11):
+    print(n*i, end = " ")
+
+# You are given a string s, you need to print its characters at even indices(index starts at 0).
+# Examples:
+# Input: s = "DoctorPhenomenal"
+# Output: DcoPeoea
+def a(S):
+    for i in range(0, len(S), 2):
+        print(S[i], end = "")
+S = input()
+print(a(S))
+
+# Input: x = 3
+# Output: 3 2 1 0
+# Explanation:
+# Numbers in decreasing order from 3
+# are 3, 2, 1, 0.
+def a(x):
+    i = x 
+    while (x >= 0):
+        print(x, end = " ")
+        x -= 1
+    return "" 
+x = int(input())
+print(a(x))
