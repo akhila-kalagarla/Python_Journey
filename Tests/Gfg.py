@@ -203,3 +203,32 @@ def a(x):
     return "" 
 x = int(input())
 print(a(x))
+
+# Given an integer n, write a program to print the square of size n using "*" character. 
+# Examples :
+# Input: n = 4
+# Output:
+# * * * *
+# *     *
+# *     *
+# * * * *
+# Explanation: It's a square! Each side contains n = 4 .
+n = int(input())
+for i in range(n):
+    for j in range(n):
+        if i == 0 or i == n-1 or j == 0 or j == n-1:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+# factorial of a number
+class Solution:
+    def factorial(self, n: int) -> int:
+        if n == 0:
+            return 1
+        else:
+            return n * self.factorial(n-1)
+obj = Solution()
+n = int(input())
+print(obj.factorial(n))
