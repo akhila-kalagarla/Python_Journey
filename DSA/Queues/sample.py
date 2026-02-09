@@ -97,9 +97,9 @@ class Queue:
             print("Queue is Empty!")
         else:
             return self.q[0]
-q=Queue()
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.dequeue()
-print(q.peek())
+# q=Queue()
+# q.enqueue(1)
+# q.enqueue(2)
+# q.enqueue(3)
+# q.dequeue()
+# print(q.peek())
