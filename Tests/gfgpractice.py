@@ -53,3 +53,13 @@ def greet():
 msg = "Hello all!"
 greet()
 print("Global Msg :", msg)
+
+msg = "Hello all"
+def greet():
+    global msg 
+    msg += "I am Akhila"
+    print(msg)
+    msg = "Good evening"
+    # print(msg)
+greet()
+print(msg) 
