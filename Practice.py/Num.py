@@ -1,7 +1,5 @@
 # To check wether the given number is prime or not 
 from sympy import prime
-
-
 def is_prime(n):
     if n <= 1:
         return False
