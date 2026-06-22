@@ -2,7 +2,6 @@
 - *python is popular language . it was created by Guido van Rossum, and released in 1991.*
 
 ### it is used for :
-
        #Web development(Server side)
        #Software development
        #Mathematics

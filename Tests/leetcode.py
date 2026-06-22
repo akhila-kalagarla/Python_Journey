@@ -13,6 +13,7 @@ for i in range(n -1, -1, -1):
     suffix *= nums[i]
 print(op) # [24, 12, 8, 6]
 
+
 '''26 - Problem in Leet code. To remove duplicates from the sorted array and return the new length of the array'''
 class Solution:
     def removeduplicates(self, nums):
@@ -28,6 +29,7 @@ nums=[1,1,2,3,3,4,4,5]
 obj = Solution()
 k = obj.removeduplicates(nums)
 print(nums[:k]) # [1, 2, 3, 4, 5]
+
 
 '''3136 - To check the given string is valid or not by using regular expressions'''
 import re
